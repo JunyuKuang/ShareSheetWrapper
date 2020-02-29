@@ -37,7 +37,7 @@ class ShareViewController: UIViewController {
         shareSheet.view.frame = view.bounds
         shareSheet.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(shareSheet.view)
-        shareSheet.didMove(toParent: shareSheet)
+        shareSheet.didMove(toParent: self)
         
         customView.backgroundColor = .systemBlue
         view.addSubview(customView)
