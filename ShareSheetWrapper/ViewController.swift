@@ -34,8 +34,7 @@ class ShareViewController: UIViewController {
         shareSheet = UIActivityViewController(activityItems: [url], applicationActivities: nil)
         
         addChild(shareSheet)
-        shareSheet.view.frame = view.bounds
-        shareSheet.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        shareSheet.view.autoresizingMask = []
         view.addSubview(shareSheet.view)
         shareSheet.didMove(toParent: self)
         
